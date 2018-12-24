@@ -1,0 +1,15 @@
+<!-- @header -->
+<header class="header">
+    <button class="profile" type="button" ng-click="Home.changeProfile()">
+        <img src="{{ urlSourceProfile }}" ng-class="{selected: profileSelected}">
+    </button>
+    <button class="notifications" type="button" ng-click="Home.goNotifications()" ng-class="{'off': haveNews == false, 'shake': haveNews}">
+        <div class="news" ng-show="haveNews"></div>	
+        <img src="/assets/img/svg/notify.svg">
+    </button>
+</header>
+
+<!-- @content -->
+<div class="content-wrapper fixed">
+    <img src="/assets/img/logo-o.svg">
+</div>
